@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Set tasks</title>
+  <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="unrevealed secrets">
+        <meta name="description" content="Discover Black Dwarf: a hub for modern intuition, innovation and descovery, and scientific collaboration for technology projects and development.">
+        <meta name="keywords" content="modern experiment design,intuition,innovation and descovery,scientific collaboration, technology projects, development.">
+</head>
+<body>
+  <input type="text" id="itemInput" placeholder="Write something...">
+  <button onclick="addItem()">Add to List</button><button onclick="delet()">clear list</button>
+  <br/>
+  <h1>add to do list or set Question to answer</h1>
+
+  <ul id="myList"></ul>
+
+  <script>
+    function addItem() {
+      // 1. Get the input value
+      let text = document.getElementById("itemInput").value;
+
+      // 2. Create a new <li> element
+      let newItem = document.createElement("li");
+
+      // 3. Add text inside the <li>
+      newItem.textContent = text;
+
+      // 4. Append <li> to the <ul>
+      document.getElementById("myList").appendChild(newItem);
+
+      // 5. Clear the input
+      document.getElementById("itemInput").value = "";
+    }
+    function delet(){
+        document.getElementById("myList").innerHTML = "";
+    }
+  </script>
+  </body>
+</html>
