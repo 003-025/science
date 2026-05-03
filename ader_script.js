@@ -7,6 +7,12 @@ const { Messages } = require("openai/resources/chat/completions.js");
             document.getElementById("thumb1").innerHTML= '<img src="https://m.media-amazon.com/images/I/71liTUApXsL._SL1500_.jpg" width="200px" height="200px"class="photo-img">';
             document.getElementById("thumb2").innerHTML= '<img src="https://tse1.mm.bing.net/th/id/OIP.VUy5nY3HExkcBANxLWemFAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" width="200px" height="200px" class="photo-img">';
         }     
+   function backThumbs(){
+            let thumb1= '<img src="https://tse1.mm.bing.net/th/id/OIP.4I7eGzr6kR5LniS12B9XYwHaEH?rs=1&pid=ImgDetMain&o=7&rm=3">';
+            let thumb2= '<img src="https://tse4.mm.bing.net/th/id/OIP.huE3lZUzPlU-N-3wglw1OwHaFN?w=640&h=450&rs=1&pid=ImgDetMain&o=7&rm=3">';
+            document.getElementById("thumb1").innerHTML= '<img src="https://tse1.mm.bing.net/th/id/OIP.4I7eGzr6kR5LniS12B9XYwHaEH?rs=1&pid=ImgDetMain&o=7&rm=3"width="200px" height="200px"class="photo-img">';
+            document.getElementById("thumb2").innerHTML= '<img src="https://tse4.mm.bing.net/th/id/OIP.huE3lZUzPlU-N-3wglw1OwHaFN?w=640&h=450&rs=1&pid=ImgDetMain&o=7&rm=3"width="200px" height="200px"class="photo-img">'; 
+        } 
         
             function revealContent(){
                 alert("Are you sure you want to continue?");
